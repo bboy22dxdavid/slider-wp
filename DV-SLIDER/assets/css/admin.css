@@ -1,0 +1,9 @@
+.dn-slider-metabox label{
+    color: rgb(17, 4, 4);
+}
+.dn-slider-metabox td{
+    padding: 5px;
+}
+.dn-slider-metabox th{
+    padding: 10px 10px 5px 0;
+}

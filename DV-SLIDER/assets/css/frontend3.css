@@ -1,0 +1,277 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CONTAINER GERAL*/
+.global-page-container {
+  width: 100%;
+  height: 70vh;
+  /*background: red;*/
+  position: relative;
+  left:70%;
+  transform: translate( -70%); 
+
+}
+
+/*CONTAINER DAS IMAGENS */
+.watch-slider {
+  top:10%;
+  height: 300px;
+  width: 65%;
+  position: relative;
+  left:89%;
+  transform: translate( -89%); 
+  cursor: pointer;
+  box-shadow: 0 15px 45 px rgba(0,0,0, 0.1);
+  border-radius: 15px;
+  /*background: green;*/
+
+
+}
+
+/*CONTAINER + CLASS DAS IMAGENS*/
+.watch-slider .slide {
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 0;
+  margin-top: 20px;
+  height: 260px;
+  transform: scale(0.7); 
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+
+/*CONTAINER + CLASS QUANDO A IMAGEM ESTA NO CENTRO*/
+.slick-center .slide{
+  transform: scale(1);
+}
+
+/*CONTAINER DOS BOTÕES*/
+.arrow {
+  /*background: rgb(19, 0, 128);*/
+  position: relative;
+  display: inline-block;
+  left:40%;
+  transform: translate( -70%); 
+  margin: 0 145px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+  cursor: pointer;
+}
+
+/*CONTAINER DA LINHA*/
+.linha{
+  position: relative;
+  height: 300px;
+  border-right: 2px solid rgb(26, 25, 25);
+  left:27%;
+  transform: translate( -30%);
+  float: left;
+  top: -250px;
+
+}
+
+/*BOTÃO VOLTAR*/
+#arrow-prev {
+  background-image: url('../img/arrow_prev.svg');
+}
+
+/*BOTÃO AVANÇAR*/
+#arrow-next {
+  background-image: url('../img/arrow_next.svg');
+}
+
+/*DIV DO TITULO*/
+.textos {
+  position: relative;
+  height: 50px;
+  width: 300px;
+  top: -300px;
+  font-family: 'Poppins';
+  font-weight: 300;
+  left:10PX;
+  padding: 0 40px;
+  color: rgb(8, 8, 8);
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 1em;
+
+}
+
+/*DIV DO SUB-TITULO*/
+#watch-subtitulo {
+  position: relative;
+  height: 50px;
+  width: 150px;
+  line-height: 50px;
+  color: #ffff;
+  font-family: 'Poppins';
+  font-weight: 500;
+  top: -330px;
+  left: 80px;
+  font-size: 0.65em;
+  text-transform: none;
+  opacity: 0.85;
+  padding: 0 40px;
+}
+
+/*DIV DO PARAGRAFO*/
+#watch-paragrafo{
+  position: relative;
+  height: 50px;
+  width: 200px;
+  top: -330px;
+  left: 50px;
+  padding: 0 40px;
+  color: rgb(8, 8, 8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 1em;
+  
+}
+
+/*DIV DO DESCRIÇÃO*/
+#watch-descricao{
+  position: relative;
+  height: 150px;
+  width: 300px;
+  top: -330px;
+  left: 20px;
+  color: rgb(8, 8, 8);
+  opacity: 0.85;
+  font-size: 0.8em;
+  
+}
+
+/*DIV DO BUTÃO*/
+#watch-button{
+  position: relative;
+  height: 50px;
+  width: 250px;
+  top: -380px;
+  left: 40px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  background: #4ba9e9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+ /*=========================================
+         RESPOSIVIDADE DO LAYOUT
+  =========================================*/
+  @media screen and (min-width: 1400px) {
+  
+    /*CONTAINER DAS IMAGENS */
+    .watch-slider {
+      height: 350px;
+      /*background: blue;*/
+    }
+
+    /*CONTAINER DOS BOTÕES*/
+    .arrow {
+      position: relative;
+      margin: 0 218px;
+  
+    }
+  }
+
+  @media screen and (max-width: 475px) {
+      /*div do container principal*/
+      .global-page-container{
+        height: 80vh;
+      }
+
+      /*div do carousel*/
+      .watch-slider {
+        top:3%;
+        left:23%;
+        transform: translate( -20%); 
+        width: 87%;
+        /*background: rgb(208, 255, 0);*/
+
+      }
+
+      /*CONTAINER DOS BOTÕES*/
+    .arrow {
+        padding-top: 30px;
+        margin-left: -30px;  
+    }
+
+    /*div da linha divisora*/
+    .linha-botton{
+      border-bottom: 2px solid rgb(26, 25, 25);
+      padding-top: 10px;
+      margin-left: 30px;
+      margin-right: 30px;
+      width: 85%; 
+    }
+    .linha{
+      border: none;
+    }
+
+    /*DIV DO TITULO*/
+    .textos {
+      width:  400px;
+      margin-top: 300px;
+      padding: 10px 90px;
+      
+    }
+
+    /*DIV DO SUB-TITULO*/
+    #watch-subtitulo {
+      margin-left: 60px;
+    }
+
+    /*DIV DO PARAGRAFO*/
+    #watch-paragrafo{
+      margin-top: -15px;
+      margin-left: 57px;
+    }
+
+    /*DIV DO DESCRIÇÃO*/
+    #watch-descricao{
+      width:  400px;
+      margin-top: -20px;
+      margin-left: 10px;
+    }
+
+    /*DIV DO BUTÃO*/
+    #watch-button{
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+  }
+
+  /*=========================================
+         CONFIGURANDO O STYLE PELO 
+               MENU DE OPCAO
+  =========================================*/
+
+/* Style 1 */
+ .style-1  {
+  background: #f6f8fa;
+}
+
+/* Style 2 */
+ .style-2   {
+  background: #e96b4b;
+}
+
